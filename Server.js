@@ -31,6 +31,9 @@ app.post('/resetpassword', resetpassword)
 //Change password
 app.post('/changepassword', changepassword)
 
+app.get("/", (req, res) =>
+    res.send(`Server Running`)
+);
 
 
 app.listen(PORT, () => console.log(`App is running in ${PORT}`))
